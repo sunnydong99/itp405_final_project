@@ -4,7 +4,8 @@
 
 @section('content')
 <div class="row">
-    {{-- <p>Don't have an account? Please <a href="{{ route('registration.index') }}">register</a>.</p> --}}
+    <div class="col-6 mx-auto">
+    <p>Don't have an account? Please <a class="details-link" href="{{ route('registration.index') }}">register</a>.</p>
     <form method="post" action="{{ route('auth.login') }}">
         @csrf
         <div class="mb-3">
@@ -20,5 +21,6 @@
         </div>
         <input type="submit" value="Login" class="btn btn-dark">
     </form>
+    </div>
 </div>
 @endsection

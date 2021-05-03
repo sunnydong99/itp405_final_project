@@ -42,7 +42,7 @@
                     </li>
                     @if (Auth::check())
                         <li class="nav-item">
-                            <a class="nav-link {{ (request()->is('favorites')) ? 'active' : '' }}" href="{{ route('fav.index') }}"><i class="fas fa-user-circle m-1"></i>Your Bias</a>
+                            <a class="nav-link {{ (request()->is('favorites')) ? 'active' : '' }}" href="{{ route('fav.index') }}"><i class="fas fa-user-circle m-1"></i>My Bias</a>
                         </li>
                         <li class='nav-item'>
                             <form method="post" action="{{ route('auth.logout') }}">

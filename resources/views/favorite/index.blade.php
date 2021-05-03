@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Your Bias')
+@section('title', 'My Biases')
 
 @section('content')
 <div class="row">
@@ -11,7 +11,7 @@
             {{-- <a href="{{ route(idol.index) }}">Idols</a>         --}}
         @else
             <div class="col-12 d-flex justify-content-between">
-                <small class="hint-text">Click <i class="fa fa-times"></i> to remove idol from your list of biases</small>
+                <small class="hint-text">Click <i class="fa fa-times"></i> to remove an idol from your list of biases</small>
                 <small class="hint-text text-right">Showing {{$favorites->count()}} idol(s).</small>
             </div>
             <table class='table table-striped' id="favorites-table">

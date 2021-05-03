@@ -10,8 +10,8 @@
             <br/>Already have an account? <a href="{{ route('auth.login') }}" class="details-link">Log in</a> to view your saved idols and edit your dream groups.
     </p>
     <div class="home-block-module col-sm-12">
-        <h3>My Bias</h3>
-        <i>You must be logged in to view your saved K-pop bias idols.</i>
+        <h3>My Biases</h3>
+        <i>You must be logged in to view your saved K-pop idol biases.</i>
     </div>
     <div class="home-block-module col-sm-12 pb-5">
         <h3>Dream Groups</h3>

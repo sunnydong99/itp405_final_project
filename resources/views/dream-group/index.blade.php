@@ -37,8 +37,9 @@
                 <a href="{{ route('dream-group.create') }}" class="details-link">Create A Group</a>
             
         @else 
-            <a href="{{ route('auth.login') }}" class="details-link">Log in</a> to create a group.
+            <a href="{{ route('auth.login') }}" class="details-link">Log in</a> to create a group
         @endif
+        or view all public groups below.
     </div>
     <div class="col-12 d-flex justify-content-between">
         <small class="hint-text">Click on <span style="text-decoration: underline">group name</span> to see more details.</small>

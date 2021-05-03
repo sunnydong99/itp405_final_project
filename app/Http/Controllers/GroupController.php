@@ -32,9 +32,13 @@ class GroupController extends Controller
             ->when ($type != 'all',function($query) use($type) {
                 return $query->where('type', '=', $type);
             })
-            ->when($name != '', function($query) use($name){
+            // ->when($name != '', function($query) use($name){
+            //     return $query->where('groups.name', 'ilike', '%' . $name . '%')
+            //         ->orWhere('companies.name', 'ilike', '%' . $name . '%');
+            // })
+            ->where(function($query) use($name) {
                 return $query->where('groups.name', 'ilike', '%' . $name . '%')
-                    ->orWhere('companies.name', 'ilike', '%' . $name . '%');
+                        ->orWhere('companies.name', 'ilike', '%' . $name . '%');
             })
             ->when ($active != 'all', function($query) use($active) {
                 // var_dump($type);

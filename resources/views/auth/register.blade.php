@@ -4,7 +4,8 @@
 
 @section('content')
 <div class="row">
-    {{-- <p>Already have an account? Please <a href="{{ route('auth.loginForm') }}">login</a>.</p> --}}
+    <div class="col-6 mx-auto">
+    <p>Already have an account? Please <a class="details-link" href="{{ route('auth.loginForm') }}">login</a>.</p>
     <form method="post" action="{{ route('registration.create') }}">
         @csrf
         <div class="mb-3">
@@ -28,9 +29,9 @@
                 <small class="text-danger"> {{ $message }} </small>
             @enderror
         </div>
-        <input type="submit" value="Register" class="btn btn-primary">
+        <input type="submit" value="Register" class="btn btn-dark">
     </form>
-    
+    </div>
 </div>
 
 @endsection

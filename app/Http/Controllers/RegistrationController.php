@@ -32,7 +32,7 @@ class RegistrationController extends Controller
 
         Auth::login($user);
         // return redirect()->route('profile.index');
-        return redirect()->route('home')
+        return redirect()->route('home.user')
         ->with('success', "Successfully registered for new account");
     }
 }

@@ -29,19 +29,19 @@ class IdolController extends Controller
                 // var_dump($gender);
                 return $query->where('gender', 'ilike', $gender);
             })
-            ->when($name != '', function($query) use($name){
+            ->where(function($query) use($name){
                 return $query->where('idols.name', 'ilike', '%' . $name . '%')
                     ->orWhere('groups.name', 'ilike', '%' . $name . '%');
             })
             ->when ($type != 'both', function($query) use($type) {
-                var_dump($type);
+                // var_dump($type);
                 
                 if ($type == 'solo') {
-                    var_dump('solo');
+                    // var_dump('solo');
                     return $query->where('solo', true);
                 }
                 else {
-                    var_dump('group');
+                    // var_dump('group');
                     return $query->where('solo', false);
                 }
             })
