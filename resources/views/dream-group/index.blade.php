@@ -9,7 +9,7 @@
         <form action="{{route('dream-group.index')}}" method="GET" id="dream-group-form">
             @csrf 
             <div class="row d-flex justify-content-center">
-                @if(Auth::check())
+                {{-- @if(Auth::check())
                 <div class="form-check d-inline col col-4">
                     <input class="" type="checkbox" value="true" id="user" {{ !Auth::check() ? 'disabled' : '' }}>
                     <label class="form-check-label" for="user">
@@ -18,7 +18,7 @@
                     <br/>
                     <small class="text-dark invisible" id="tiptext">Your must be logged in to filter by account</small>
                 </div>
-                @endif
+                @endif --}}
                 <div class="col col-5">
                     <div class="search-box-container">
                         <input type="text" name="search" id="search" class="form-control" 

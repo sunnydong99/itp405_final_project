@@ -17,7 +17,7 @@ class DreamGroupController extends Controller
 {
     public function index(Request $request) {
         $search = $request->input('search', '');
-        $user = $request->input('user', '');
+        // $user = $request->input('user', '');
 
         $dreamGroups = DreamGroup::with('user')
             ->join('users', 'dream_groups.user_id', '=', 'users.id')
@@ -26,9 +26,9 @@ class DreamGroupController extends Controller
                 return $query->where('dream_groups.name', 'ilike', '%' . $search . '%')
                     ->orWhere('dream_groups.display_name', 'ilike', '%' . $search . '%');
             })
-            ->when($user != '', function($query) use($user){
-                return $query->where('dream_groups.user_id','=',Auth::user()->id);
-            })
+            // ->when($user != '', function($query) use($user){
+            //     return $query->where('dream_groups.user_id','=',Auth::user()->id);
+            // })
             ->orderBy('dream_groups.created_at', 'desc')
             ->get();
        // dd($dreamGroups);
