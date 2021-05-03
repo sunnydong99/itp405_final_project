@@ -36,7 +36,7 @@
                             <td>
                                 <form method="post" action="{{ route('fav.destroy', ['id' => $favorite->id]) }}">
                                     @csrf
-                                    {{-- @method('DELETE') --}}
+                                    @method('DELETE')
                                     <button type="submit" class="btn bias-link p-0"><i class="fa fa-times"></i></button>
                                 </form>
                             </td>

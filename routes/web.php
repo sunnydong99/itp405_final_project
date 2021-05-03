@@ -45,7 +45,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('auth.logout');
     Route::get('/favorites', [FavoriteController::class, 'index'])->name('fav.index');
     Route::post('/favorites', [FavoriteController::class, 'store'])->name('fav.store'); 
-    Route::post('/favorites/{id}', [FavoriteController::class, 'destroy'])->where('id', '[0-9]+')->name('fav.destroy'); //needs auth - only this user can access
+    Route::delete('/favorites/{id}', [FavoriteController::class, 'destroy'])->where('id', '[0-9]+')->name('fav.destroy'); //needs auth - only this user can access
     
     Route::get('/dreamgroups/create', [DreamGroupController::class, 'create'])->name('dream-group.create');
     Route::post('/dreamgroups', [DreamGroupController::class, 'store'])->name('dream-group.store');

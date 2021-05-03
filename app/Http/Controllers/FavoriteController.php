@@ -39,7 +39,6 @@ class FavoriteController extends Controller
     public function destroy($id)
     {
         
-        // dd($favorite);
         $idol = Favorite::find($id)->idol->name;
         Favorite::destroy($id);
 
