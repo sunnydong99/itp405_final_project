@@ -5,7 +5,11 @@
 
 ## Database Diagram
 
-![Database diagram]("public/img/itp405_diagram.pngraw=true")
+![Database diagram](asset(public/img/itp405_diagram.png))
+
+![Database diagram](https://github.com/sunnydong99/itp405_final_project/blob/6b38bbfd939c876d0ad7e0da1c1a7ef841cd25e2/public/img/itp405_diagram.png)
+
+![Database diagram](HTML::image('img/itp405_diagram.png'))
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
