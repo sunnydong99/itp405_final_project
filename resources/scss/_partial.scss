@@ -1,0 +1,37 @@
+$primaryBackgroundColor: #dad2d8;
+$secondaryBackgroundColor: #E6E8E6;
+$textColor: #28231C;
+$headingColor: #070707;
+$linkColor:#513B3C;
+$shadowColor: #655356;
+//break points
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+@font-face {
+    font: {
+      family: 'Playfair Display';
+      weight: normal;
+      style: normal;
+    }
+    src: url('./fonts/PlayfairDisplay-Regular.ttf');
+}
+@font-face {
+    font: {
+      family: 'Playfair Display';
+      weight: bold;
+      style: normal;
+    }
+    src: url('./fonts/PlayfairDisplay-SemiBold.ttf');
+}
+@font-face {
+    font: {
+      family: 'Cabin';
+      weight: normal;
+      style: normal;
+    }
+    src: url('./fonts/Cabin-Regular.ttf')
+}
+$headingFont: 'Playfair Display', 'sans-serif';
+$bodyFont: 'Cabin', 'sans-serif';
