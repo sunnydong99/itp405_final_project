@@ -1,11 +1,11 @@
 ## Link to Application
 
-[Heroku Link] (https://kpub.herokuapp.com/)
+[Heroku Link](https://kpub.herokuapp.com/)
 
 
 ## Database Diagram
 
-![Database diagram](asset('img/itp405_diagram.png'))
+![Database diagram]("public/img/itp405_diagram.pngraw=true")
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
