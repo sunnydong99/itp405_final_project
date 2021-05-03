@@ -2,6 +2,9 @@
 
 [Heroku Link](https://kpub.herokuapp.com/)
 
+## Video Walkthrough
+
+[Zoom Meeting Recording](https://usc.zoom.us/rec/share/ZqK79Qr8yc1ZWNjgCdZKURt0QrcApfY32Aa5wPBzzMcZbTHEY5jgK7jUGJa-nA.uAJHJTAxVIOeZjzI)
 
 ## Database Diagram
 
